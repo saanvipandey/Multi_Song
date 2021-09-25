@@ -20,7 +20,7 @@ function preload()
 }
 
 function setup() {
-	canvas =  createCanvas(600, 500);
+	canvas =  createCanvas(400, 400);
 	canvas.center();
 
 	video = createCapture(VIDEO);
@@ -55,7 +55,7 @@ function gotPoses(results)
 }
 
 function draw() {
-	image(video, 0, 0, 600, 500);
+	image(video, 0, 0, 400, 400);
 	
 	song1_status = song1.isPlaying();
 	song2_status = song2.isPlaying();
